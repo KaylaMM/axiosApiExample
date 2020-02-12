@@ -6,8 +6,10 @@ const axios = require('axios');
 router.get('/', (req, res, next) => {
   axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000')
     .then(response => {
-    xres.render('pokemon/pokemon-list')
+    res.render('pokemon/pokemon-list')
   }).catch(err => next(err))
 });
 
 module.exports = router;
+
+//Look at Marcos's code to compare and complete

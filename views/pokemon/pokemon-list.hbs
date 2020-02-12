@@ -1,6 +1,6 @@
 <h1>List of Pokemon</h1>
 <ul>
-  {{#each}}
-  <li> {{thius.name}} </li>
+  {{#each allPokemon}}
+  <a href="/details/{{@index}}"> {{this.name}} </a>
   {{/each}}
 </ul>
